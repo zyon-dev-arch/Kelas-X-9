@@ -1,0 +1,50 @@
+body{
+  background-image: url('img/ppl.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 98vh;
+  max-height: 1000vh;
+  align-content: center;
+  animation: background 20s ease-in infinite;
+}
+header, article {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  animation: transisi 3s;
+  color:white;
+}
+.btn {
+  font-size: 3vh;
+  width: 50%;
+  height: 50;
+  background-color: gray;
+  border-radius:3vh;
+  border-color: #aba6a6
+}
+@keyframes transisi {
+  0% {transform: translateY(0); opacity: 0;}
+  50% {transform: translateY(-7vh); opacity: 0.5;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+@keyframes background{
+  0% {background-position: 0%;}
+  50% {background-position: 100%;}
+  100%{background-position: 0%;}
+}
+a:hover{
+  color: white;
+  background-color: black;
+}
+a {
+  color: black;
+  border-radius:6vh;
+  background: gray;
+  padding-right: 6vh;
+  padding-left: 6vh;
+  text-decoration: none;
+}
+h1{
+  font-size: 5vh;
+  text-align: center;
+}
